@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1{
+            color: red;
+        }
+.blue{
+    color: blue;
+}
+.green{
+    color: green;
+}
+
+button:hover:before {
+                transform: translate(-30%, -30%) rotate(405deg);
+                opacity: 0.8;
+            }
+            button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 18px;
+                text-align: center;
+                text-decoration: none;
+                color: gray;
+                background-color: rgba(128, 128, 128, 0.603);
+                border-radius: 2px;
+                border: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                transition: all 0.3s ease;
+            }
+button:hover{
+    font-size: 30px;
+    box-shadow:0 3px 5px gray;
+    color: rgb(10, 10, 10);
+    
+    
+}
+
+
+    </style>
+</head>
+<body>
+<button onclick="document.body.style.backgroundColor ='red'">Red</button>
+<button onclick="document.body.style.backgroundColor ='blue'">Blue</button>
+<button onclick="document.body.style.backgroundColor ='green'">Green</button>
+
+
+
+</body>
+</html>

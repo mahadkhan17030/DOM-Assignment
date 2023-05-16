@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            color: #3b3b3b;
+            background-color: gray;
+            border-radius: 6px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+            cursor: pointer;
+            position: relative;
+              
+        }
+
+
+
+button:hover{
+    font-size: 20px;
+    box-shadow:0 3px 5px gray;
+    color: rgb(10, 10, 10);
+    
+    
+}
+
+</style>
+
+
+</head>
+
+<body>
+   
+<div class="main">
+    <h1 id="qoute">Qoute</h1>
+    <button onclick="location.reload()">Next</button>
+</div>
+
+<script>
+ rand = Math.round(Math.random() * 3)
+        var qoute = ["Hello everyone kia hal hy ap k.", "ap k taluk kha sy hy .", "My name is Daniyal Ahmed Hashmi.", "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat dolore omnis! Quam, eius blanditiis illum suscipit at, exercitationem qui non saepe laboriosam quos labore, nisi pariatur. Iusto, quaerat nam."]
+        function genQoute() {
+            document.getElementById('qoute').innerHTML = qoute[rand]
+        }
+        genQoute()
+
+
+</script>
+</body>
+</html>
